@@ -1,0 +1,122 @@
+
+body {
+	font-family: "微软雅黑";
+}
+
+table,
+th,
+td {
+	border: 1px solid grey;
+	border-collapse: collapse;
+}
+
+td,
+th {
+	padding: 5px 20px;
+}
+
+.delete {
+	background-color: red;
+	border: none;
+	color: white;
+	font-size:20px;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+.update{
+	background-color: green;
+	border: none;
+	color: white;
+	font-size:20px;
+	padding: 5px 15px;
+	border-radius: 3px;
+}
+
+.list{
+	font-size:1.5em
+}
+.list tr:hover {
+	background-color: grey;
+	color: white
+}
+
+header {
+	height: 80px;
+	background-color: darkslategray;
+	padding-top: 15px;
+	padding-left: 50px;
+	color: white;
+	font-size: 3em
+}
+
+aside {
+	width: 200px;
+	background-color: cadetblue;
+	height: 500px;
+	padding-top: 100px;
+}
+
+main {
+	height: 600px;
+	width: 800px;
+	position: absolute;
+	left: 210px;
+	top: 105px;
+	padding:30px 100px
+}
+
+table {
+	margin-left: 100px;
+	margin-top: 100px;
+}
+
+ul {
+	color: white;
+	list-style: none;
+}
+
+li {
+	width: 100px;
+	background-color: darkslategrey;
+	color: white;
+	margin-top: 10px;
+	text-align: center;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+li:hover {
+	background-color: white;
+	color: black
+}
+
+form {
+	margin: 100px;
+}
+
+.updateInfo,
+.addInfo,
+.clearInfo {
+	display: inline-block;
+	background-color: cornflowerblue;
+	color: white;
+	padding: 5px 50px;
+	border-radius: 3px;
+}
+.updateInfo:hover,
+.addInfo:hover,
+.clearInfo:hover {
+	position: relative;
+	top: 1px;
+	cursor: pointer;
+}
+
+.msg {
+	border: 1px solid darkorange;
+	border-radius: 2px;
+	margin-left: 300px;
+	font-size: 2em;
+	color: orange;
+	background-color: lightgrey;
+	padding: 10px 25px
+}

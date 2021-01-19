@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src="data3.js"></script>
+		<script src="operations3.js"></script>
+		<script src="echarts.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="../login/demo-login.css" />
+	</head>
+
+	<body>
+		<div class="div">
+			<div id="windows">
+				<h1>
+					学生管理系统
+				</h1>
+				<br>
+				<br>
+				<form style="position: absolute; top: -20px;">
+					//输入ID，一旦变化调用存储
+					LoginID: <input type="text" name="ID" id="m" onchange="sub(this)">
+					<br>
+					//密码
+					Password: <input type="password" name="password">
+					//提交button，跳转刷新函数
+					<button type="button" style="width:200px; margin-top:20px ; background-color:skyblue;" onclick="refresh()">submit</button>
+				</form>
+				<br>
+			</div>
+			<br />
+		</div>
+		<script language="javascript">
+		var namestorage = localStorage; // 定义本地存储
+		// 定义函数 获取input值，存储在本地已备跳转
+		function sub(object){
+			var name = object.value;
+			console.log(name)
+			namestorage.setItem('name', name)
+			}
+		</script>
+	</body>
+
+
+</html>
